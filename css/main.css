@@ -1,0 +1,162 @@
+/*
+ * main.css
+ *  Hoja de estilos principal
+ */ 
+
+/* Estilos generales */
+html{
+	height:100%;
+	margin:0;
+	min-height:100%;
+	padding:0;
+	width:100%;
+	background-color:#2A2A2A;
+	font-family:sans-serif;
+}
+
+body{
+	height:100%;
+	margin:0 auto;
+	min-height:100%;	
+}
+
+.container{
+	width: 82%;
+	margin-left:8%;
+	background-color:#EEE;
+	border:1px solid rgba(150,150,150,0.7);
+	padding:10px;
+	box-shadow:1px -9px 3px #000;
+}
+
+a{color:#008;text-decoration:none;}
+a:hover{color:#77B;}
+
+.footer{
+	width:99%;
+	margin-top:10px;
+	background-color:#555;
+	color:#DDD;
+	padding-left:1%;
+	padding-top:1px;
+}
+/* Estilos para las tablas de rankings */
+.generalstats{
+	position: absolute;
+	right:10%;
+	top:137px;
+	width:35%;
+}
+
+.floodstats{
+	position: absolute;
+	right:25%;
+	top:220px
+}
+
+.rtable{
+	width:57%;
+}
+
+/* Estilo para el div oculto de información de usuario */
+#stat{
+	background-color:rgba(150,150,150,0.95);
+	 position: fixed;
+	 bottom: 10px;
+	 right: 10px;
+	padding:10px;
+	border-radius:7px;
+	border:1px solid #888;
+	z-index: 500;
+}
+
+/* Boton "cerrar" (X) de el div de información */
+.close{
+	background-color:rgba(0,0,0,0); /* transparente */
+	 position: absolute; 
+	 top:5px;
+	 right:5px;
+	height:10px;
+	padding:10px;
+	color:#F00;
+}
+
+/* CSS de los mensajes de notificación */
+.message{
+		background-size: 40px 40px;			
+		background-image: -webkit-gradient(linear, left top, right bottom,
+								color-stop(.25, rgba(255, 255, 255, .05)), color-stop(.25, transparent),
+								color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .05)),
+								color-stop(.75, rgba(255, 255, 255, .05)), color-stop(.75, transparent),
+								to(transparent));
+		background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, .05) 25%, transparent 25%,
+							transparent 50%, rgba(255, 255, 255, .05) 50%, rgba(255, 255, 255, .05) 75%,
+							transparent 75%, transparent);
+		background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, .05) 25%, transparent 25%,
+							transparent 50%, rgba(255, 255, 255, .05) 50%, rgba(255, 255, 255, .05) 75%,
+							transparent 75%, transparent);
+		background-image: -ms-linear-gradient(135deg, rgba(255, 255, 255, .05) 25%, transparent 25%,
+							transparent 50%, rgba(255, 255, 255, .05) 50%, rgba(255, 255, 255, .05) 75%,
+							transparent 75%, transparent);
+		background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, .05) 25%, transparent 25%,
+							transparent 50%, rgba(255, 255, 255, .05) 50%, rgba(255, 255, 255, .05) 75%,
+							transparent 75%, transparent);
+		background-image: linear-gradient(135deg, rgba(255, 255, 255, .05) 25%, transparent 25%,
+							transparent 50%, rgba(255, 255, 255, .05) 50%, rgba(255, 255, 255, .05) 75%,
+							transparent 75%, transparent);
+								
+	
+		 box-shadow: inset 0 -1px 0 rgba(255,255,255,.4);
+		 width: 99%;
+		 border: 1px solid;
+		 color: #fff;
+		 padding: 16px;
+		 position: fixed;
+		 _position: absolute;
+		 text-shadow: 0 1px 0 rgba(0,0,0,.5);
+		 -webkit-animation: animate-bg 5s linear infinite;
+		 -moz-animation: animate-bg 5s linear infinite;
+}
+
+.info{
+		 background-color: #4ea5cd;
+		 border-color: #3b8eb5;
+}
+
+.error{
+		 background-color: #de4343;
+		 border-color: #c43d3d;
+}
+		 
+.warning{
+		 background-color: #eaaf51;
+		 border-color: #d99a36;
+}
+
+.success{
+		 background-color: #61b832;
+		 border-color: #55a12c;
+}
+
+.message h3{ margin: 0 0 5px 0;}
+.message p{ margin: 0;}
+
+@-webkit-keyframes animate-bg
+{
+    from {
+        background-position: 0 0;
+    }
+    to {
+       background-position: -80px 0;
+    }
+}
+
+@-moz-keyframes animate-bg 
+{
+    from {
+        background-position: 0 0;
+    }
+    to {
+       background-position: -80px 0;
+    }
+}
