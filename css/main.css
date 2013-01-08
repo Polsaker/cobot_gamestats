@@ -116,6 +116,7 @@ a:hover{color:#77B;}
 		 text-shadow: 0 1px 0 rgba(0,0,0,.5);
 		 -webkit-animation: animate-bg 5s linear infinite;
 		 -moz-animation: animate-bg 5s linear infinite;
+		 z-index: 5000; /* Debe aparecer por sobre todas las cosas */
 }
 
 .info{
